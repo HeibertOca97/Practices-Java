@@ -1,0 +1,16 @@
+package com.cmc.servicios;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+
+@Path("/clientes")
+public class ServicioClientes {
+	
+	@GET
+	@Path("/consulta")
+	public String metodo1(){
+		
+		return "Saludando desde el rest web service!!";
+	}
+	
+}

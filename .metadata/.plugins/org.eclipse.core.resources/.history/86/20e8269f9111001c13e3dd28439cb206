@@ -1,0 +1,7 @@
+package com.cmc.servicios;
+
+public class ServicioClientes {
+	public void metodo1(){
+		return "Saludando desde el rest web service!!";
+	}
+}

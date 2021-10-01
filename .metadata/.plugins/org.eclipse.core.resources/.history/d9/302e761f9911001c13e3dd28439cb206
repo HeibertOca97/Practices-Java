@@ -1,0 +1,25 @@
+package com.cmc.servicios;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+
+import com.cmc.entidades.Cliente;
+
+@Path("/clientes")
+public class ServicioClientes {
+	
+	@Path("/consulta")
+	@GET
+	public String metodo1(){
+		
+		return "Saludando desde el rest web service!!";
+	}
+	
+	public Cliente consultar(){
+		Cliente c = new Cliente();
+		c.setNombre("Samatha");
+		c.setCedula("125481570");
+		return c;
+	}
+	
+}
