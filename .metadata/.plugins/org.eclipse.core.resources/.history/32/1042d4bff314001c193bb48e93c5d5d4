@@ -1,0 +1,21 @@
+package com.cmc.rest.servicios;
+
+import java.util.ArrayList;
+
+import com.cmc.rest.commons.ArchivoException;
+import com.cmc.rest.entidades.Persona;
+
+public class TestArchivo {
+
+	public static void main(String[] args) {
+		ManejadorArchivos archivo = new ManejadorArchivos("clientes.txt");
+		try {
+			ArrayList<Persona> listado = archivo.leer();
+			System.out.println(archivo.leer());
+		} catch (ArchivoException e) {
+			System.out.println(e.getMessage());
+		}
+
+	}
+
+}

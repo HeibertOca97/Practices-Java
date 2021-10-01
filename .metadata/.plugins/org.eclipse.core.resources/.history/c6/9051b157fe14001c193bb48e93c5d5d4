@@ -1,0 +1,42 @@
+package com.cmc.rest.servicios;
+
+import java.util.ArrayList;
+
+import com.cmc.rest.commons.ArchivoException;
+import com.cmc.rest.commons.ValidationException;
+import com.cmc.rest.entidades.Persona;
+
+public class ServicioPersonas {
+	
+	public static Persona actualizar(Persona persona) throws ValidationException{
+		
+		if(persona.getNombre().length() <= 3){
+			throw new ValidationException("El nombre es muy corto");
+		}
+		
+		if(persona.getApellido().length() <= 3){
+			throw new ValidationException("El apellido es muy corto");
+		}
+		
+		persona.setNombre(persona.getNombre().toUpperCase());
+		persona.setApellido(persona.getApellido().toUpperCase());			
+		
+		return persona;
+	}
+	
+	public static Persona buscarPorCedula(String cedula){
+		ManejadorArchivos archivo = new ManejadorArchivos("clientes.txt");
+		Persona recuperar = null;
+		try {
+			ArrayList<Persona> listado = archivo.leer();
+			for(Persona persona : listado){
+				if(persona.getCedula().equals(cedula)){
+					
+				}
+			}
+		} catch (ArchivoException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

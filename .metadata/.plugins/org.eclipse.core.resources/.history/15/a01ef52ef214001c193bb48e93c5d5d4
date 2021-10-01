@@ -1,0 +1,17 @@
+package com.cmc.rest.servicios;
+
+import com.cmc.rest.commons.ArchivoException;
+
+public class TestArchivo {
+
+	public static void main(String[] args) {
+		ManejadorArchivos archivo = new ManejadorArchivos("clientes.txt");
+		try {
+			archivo.leer();
+		} catch (ArchivoException e) {
+			System.out.println(e.getMessage());
+		}
+
+	}
+
+}
