@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="com.clearminds.conceptos.Rectangulo"/>
+<fullyQualifiedTypeName name="com.clearminds.conceptos.Calculadora"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.Map.Entry"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="com.cmc.estaticos.Util"/>
+<fullyQualifiedTypeName name="com.cmc.util.Dado"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="org.apache.logging.log4j.Logger"/>
+<fullyQualifiedTypeName name="org.apache.logging.log4j.LogManager"/>
+</qualifiedTypeNameHistroy>

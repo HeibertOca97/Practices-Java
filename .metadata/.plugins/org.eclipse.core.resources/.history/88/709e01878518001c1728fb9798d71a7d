@@ -1,0 +1,16 @@
+package com.cmc.excepciones;
+
+public class TestDeposito {
+
+	public static void main(String[] args) {
+		Cuenta c = new Cuenta();
+		c.depositar(-10);
+		try {
+		} catch (CheckedException e) {
+			//e.printStackTrace();
+			System.out.println(e.getMessage());
+		}
+		System.out.println("Finaliza");
+	}
+
+}

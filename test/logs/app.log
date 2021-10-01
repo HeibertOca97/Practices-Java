@@ -1,0 +1,24 @@
+2021-09-05 15:32:55.791 [main] ERROR com.cmc.capacitacion.archivo.ManejadorArchivos - No existe el archivo: 
+java.io.FileNotFoundException: C:\Users\Heibert\Desktop\anime.txt (El sistema no puede encontrar el archivo especificado)
+	at java.io.FileInputStream.open0(Native Method) ~[?:1.8.0_281]
+	at java.io.FileInputStream.open(FileInputStream.java:195) ~[?:1.8.0_281]
+	at java.io.FileInputStream.<init>(FileInputStream.java:138) ~[?:1.8.0_281]
+	at java.io.FileReader.<init>(FileReader.java:72) ~[?:1.8.0_281]
+	at com.cmc.capacitacion.archivo.ManejadorArchivos.leer(ManejadorArchivos.java:25) [classes/:?]
+	at com.cmc.capacitacion.test.TestManejador.main(TestManejador.java:16) [classes/:?]
+2021-09-05 15:32:55.791 [main] ERROR com.cmc.capacitacion.test.TestManejador - No existe el archivo 
+com.cmc.capacitacion.excepciones.ToxicaException: No existe el archivo: C:\Users\Heibert\Desktop\anime.txt
+	at com.cmc.capacitacion.archivo.ManejadorArchivos.leer(ManejadorArchivos.java:31) ~[classes/:?]
+	at com.cmc.capacitacion.test.TestManejador.main(TestManejador.java:16) [classes/:?]
+2021-09-05 15:49:52.757 [main] ERROR com.cmc.capacitacion.archivo.ManejadorArchivos - No existe el archivo: 
+java.io.FileNotFoundException: C:\Users\Heibert\Desktop\animes2.txt (El sistema no puede encontrar el archivo especificado)
+	at java.io.FileInputStream.open0(Native Method) ~[?:1.8.0_281]
+	at java.io.FileInputStream.open(FileInputStream.java:195) ~[?:1.8.0_281]
+	at java.io.FileInputStream.<init>(FileInputStream.java:138) ~[?:1.8.0_281]
+	at java.io.FileReader.<init>(FileReader.java:72) ~[?:1.8.0_281]
+	at com.cmc.capacitacion.archivo.ManejadorArchivos.leer(ManejadorArchivos.java:25) [classes/:?]
+	at com.cmc.capacitacion.test.TestManejador.main(TestManejador.java:16) [classes/:?]
+2021-09-05 15:49:52.765 [main] ERROR com.cmc.capacitacion.test.TestManejador - No existe el archivo 
+com.cmc.capacitacion.excepciones.ToxicaException: No existe el archivo: C:\Users\Heibert\Desktop\animes2.txt
+	at com.cmc.capacitacion.archivo.ManejadorArchivos.leer(ManejadorArchivos.java:31) ~[classes/:?]
+	at com.cmc.capacitacion.test.TestManejador.main(TestManejador.java:16) [classes/:?]

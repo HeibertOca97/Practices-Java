@@ -1,0 +1,4 @@
+2021-09-04 15:10:56.871 [main] INFO  com.cmc.log.Admin - Mensaje de Info
+2021-09-04 15:10:56.874 [main] INFO  com.cmc.log.Admin - Bienvenidos a la fase 2
+2021-09-04 15:16:54.363 [main] INFO  com.cmc.log.Admin - Mensaje de Info
+2021-09-04 15:16:54.365 [main] WARN  com.cmc.log.Admin - Mensaje de Warn
