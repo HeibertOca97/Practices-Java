@@ -1,0 +1,76 @@
+package com.cmc.evaluacion.fase2.entidades;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class Cartera {
+	private HashMap<String, ArrayList<Pago>> pagos;
+	private ArrayList<Cliente> clientes;
+	private ArrayList<Pago> valores = new ArrayList<Pago>();
+
+	public Cartera() {
+		clientes = new ArrayList<Cliente>();
+		pagos = new HashMap<String, ArrayList<Pago>>();
+	}
+
+	public ArrayList<Cliente> getClientes() {
+		return clientes;
+	}
+
+	public boolean agregarCliente(Cliente cliente) {
+		Cliente clienteEncontrado = this.buscarCliente(cliente.getCedula());
+		if (clienteEncontrado == null) {
+			this.clientes.add(cliente);
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	public Cliente buscarCliente(String cedula) {
+
+		for (Cliente cliente : this.clientes) {
+			if (cliente.getCedula().equals(cedula)) {
+				return cliente;
+			}
+		}
+
+		return null;
+	}
+
+	public void colocarPrestamo(Prestamo prestamo) {
+		Cliente clienteRecuperado = this.buscarCliente(prestamo.getCedulaCliente());
+		if (clienteRecuperado != null) {
+			clienteRecuperado.agregarPrestamo(prestamo);
+		}
+	}
+
+	public void agregarPago(Pago pago) {
+
+		if (!pagos.containsKey(pago.getNumeroPrestamo())) {
+			valores.add(pago);
+			pagos.put(pago.getNumeroPrestamo(), valores);
+
+		} else if (pagos.containsKey(pago.getNumeroPrestamo())) {
+			valores.add(pago);
+		}
+	}
+
+	public HashMap<String, ArrayList<Pago>> getPagos() {
+		return pagos;
+	}
+
+	public ArrayList<Pago> consultarPagos(String codigoPrestamo) {
+		ArrayList<Pago> listaPagos = null;
+
+		if (pagos.containsKey(codigoPrestamo)) {
+			for (int i = 0; i < pagos.size(); i++) {
+				listaPagos.addAll(pagos.get(i));
+			}
+			System.out.println(listaPagos);
+		}
+
+		return listaPagos;
+	}
+
+}

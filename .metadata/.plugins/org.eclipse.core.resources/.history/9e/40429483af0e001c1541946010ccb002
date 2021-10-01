@@ -1,0 +1,15 @@
+package com.cmc.evaluacion.fase2.test;
+
+import com.cmc.evaluacion.fase2.entidades.Cartera;
+import com.cmc.evaluacion.fase2.entidades.Cliente;
+
+public class TestCartera {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Cartera cartera = new Cartera();
+		boolean resultado=cartera.agregarCliente(new Cliente("1723453421","Marco","Perez"));
+		assertTrue(resultado);
+	}
+
+}

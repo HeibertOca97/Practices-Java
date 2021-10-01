@@ -1,0 +1,26 @@
+package com.cmc.evaluacion.fase2.entidades;
+
+import java.util.Date;
+
+public class Pago {
+	private String numeroPrestamo;
+	private Date fechaPago;
+	private double monto;
+	
+	public Pago(String numeroPrestamo) {
+		super();
+		this.numeroPrestamo = numeroPrestamo;
+	}
+
+	@Override
+	public String toString() {
+		return "Pago [numeroPrestamo=" + numeroPrestamo + ", fechaPago=" + fechaPago + ", monto=" + monto + "]";
+	}
+
+	public String getNumeroPrestamo() {
+		return numeroPrestamo;
+	}
+	
+	
+	
+}

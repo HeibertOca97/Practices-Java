@@ -1,0 +1,13 @@
+package com.cmc.evaluacion.fase2.test;
+
+import com.cmc.evaluacion.fase2.entidades.Cartera;
+
+public class TestCartera {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Cartera cartera = new Cartera();
+		
+	}
+
+}

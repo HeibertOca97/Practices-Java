@@ -1,0 +1,15 @@
+package com.cmc.commons.util;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import com.cmc.excepciones.CheckedException;
+
+public class DateUtil {
+	
+	public static Date convertir(String date) throws CheckedException{
+		SimpleDateFormat formato = new SimpleDateFormat("yyyy/mm/dd");
+		String nuevoFormato = formato.parse(date);
+		return null;
+	} 
+}

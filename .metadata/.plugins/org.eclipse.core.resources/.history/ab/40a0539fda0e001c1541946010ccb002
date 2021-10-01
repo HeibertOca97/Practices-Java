@@ -1,0 +1,33 @@
+package com.cmc.evaluacion.fase2.servicios;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+
+import com.cmc.evaluacion.fase2.entidades.Cartera;
+
+public class AdminPrestamos {
+	
+	public void colocarPrestamo(String rutaArchivo, Cartera cartera){
+		File file = new File(rutaArchivo);
+		FileReader fReader = null;
+		BufferedReader bReader = null;
+		
+		try {
+			fReader = new FileReader(file);
+			bReader = new BufferedReader(fReader);
+			int value = bReader.read();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+	}
+	
+	private static void armarPrestamo(String linea, Cartera cartera){
+		//linea
+	}
+
+}

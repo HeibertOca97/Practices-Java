@@ -1,0 +1,23 @@
+package com.cmc.commons.util;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class DateUtil {
+	
+	private final static String PATRON = "yyyy/mm/dd";
+	
+	public static Date convertir(String date){
+		SimpleDateFormat formato = new SimpleDateFormat(PATRON);
+		Date nuevoFormato = null;
+		try {
+			nuevoFormato = formato.parse(date);
+		} catch (ParseException e) {
+			//Ha ocurrido un problema al momento de convertir la fecha
+			
+		}
+		
+		return nuevoFormato;
+	} 
+}

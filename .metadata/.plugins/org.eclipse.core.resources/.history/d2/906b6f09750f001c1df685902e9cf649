@@ -1,0 +1,8 @@
+package com.cmc.evaluacion.fase2.entidades;
+
+public class Balance {
+	private String numeroCedula;
+	private double valorPrestamos;
+	private double valorPagado;
+	private double saldo;
+}

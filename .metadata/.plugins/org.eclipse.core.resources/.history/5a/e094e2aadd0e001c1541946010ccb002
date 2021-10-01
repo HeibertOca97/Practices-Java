@@ -1,0 +1,57 @@
+package com.cmc.evaluacion.fase2.servicios;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+import com.cmc.commons.util.TipoPrestamo;
+import com.cmc.evaluacion.fase2.entidades.Cartera;
+
+public class AdminPrestamos {
+	
+	public void colocarPrestamo(String rutaArchivo, Cartera cartera){
+		File file = new File(rutaArchivo);
+		FileReader fReader = null;
+		BufferedReader bReader = null;
+		String lineas = "";
+		try {
+			fReader = new FileReader(file);
+			bReader = new BufferedReader(fReader);
+			while ((lineas = bReader.readLine()) != null) {
+				
+			}
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+	}
+	
+	private static void armarPrestamo(String linea, Cartera cartera){
+		DateUtil formato = DateUtil();
+		double monto;
+		String pCaracter;
+		String fecha;
+		String[] datos;
+		datos = linea.split("-");
+		pCaracter = datos[1].substring(0,1);
+		fecha = datos[2];
+		monto = (double)(datos[3]);
+		if(TipoPrestamo.HIPOTECARIO.equals(pCaracter)){
+			cartera
+		}else if(TipoPrestamo.QUIROGRAFARIO.equals(pCaracter)){
+			
+		}else{
+			
+		}
+		
+		
+	}
+
+}
